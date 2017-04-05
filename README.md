@@ -1,4 +1,4 @@
-# exim-router
+# exim-relay
 
 This is a base Exim docker image configured to act as a relay with some basic 
 `main`, `acl` and `retry` defaults.
@@ -19,7 +19,7 @@ either to `/etc/exim/exim.conf` or to the following included files:
 
 ## Environment variables 
 
-### RELAY_FROM_HOSTS
+### EXIM_RELAY_FROM_HOSTS
 Sets `relay_from_hosts` host list which is used in acl checks.
 
 Default value: `10.0.0.0/8 : 172.16.0.0/12 : 192.168.0.0/16`
