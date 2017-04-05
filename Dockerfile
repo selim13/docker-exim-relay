@@ -17,7 +17,7 @@ RUN mkdir /etc/exim/conf.d /var/log/exim /usr/lib/exim /var/spool/exim \
 COPY exim.conf /etc/exim/
 COPY conf.d/* /etc/exim/conf.d/
 
-ENV RELAY_FROM_HOSTS=10.0.0.0/8:172.16.0.0/12:192.168.0.0/16
+ENV EXIM_RELAY_FROM_HOSTS=10.0.0.0/8:172.16.0.0/12:192.168.0.0/16
 
 USER exim
 EXPOSE 25
